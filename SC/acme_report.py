@@ -37,7 +37,7 @@ def generate_products(n=30):
 # NOT DONE... PICK UP HERE...
 def inventory_report(products):
     for product in products:
-        print(len(products['name']))
+        print('Number of Unique Products:', len(products))
         print('Average Price: ', mean(products[]))
 
 

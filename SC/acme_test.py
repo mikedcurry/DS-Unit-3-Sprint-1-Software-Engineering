@@ -25,8 +25,9 @@ class AcmeProductTests(unittest.TestCase):
         self.assertEqual(prod.stealability, 'Very stealable!')
 
 
+# Need to finish the acme_report first before returning to this...
 class AcmeReportTests(unittest.TestCase):
-    """Blah Blah Blah..."""
+    """Tests the Acme Report"""
     def test_default_num_products(self):
         pass
 
