@@ -22,6 +22,7 @@ class AcmeProductTests(unittest.TestCase):
         self.assertEqual(prod.explode(), '...BABOOOOMMMm!!!!')
 
     def test_stealage(self):
+        """Tests to see if report works for stealability"""
         prod = Product('Test Product', price=20, weight=1)
         self.assertEqual(prod.stealability(), 'Very stealable!')
 
