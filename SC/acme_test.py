@@ -38,7 +38,7 @@ class AcmeReportTests(unittest.TestCase):
         prod_names = []
         c = 0
         while c < 30:     # Because it is default I can assume it's 30 here...
-            synth = random.choice(adj), ' ', random.choice(noun)
+            synth = random.choice(adj) + ' ' + random.choice(noun)
             prod_names.append(synth)
             c = c+1
         names = []

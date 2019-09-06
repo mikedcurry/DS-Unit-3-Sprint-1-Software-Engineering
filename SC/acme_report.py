@@ -20,7 +20,7 @@ def generate_products(n=30):
     c = 0
 
     while c < (n+1):
-        synth = random.choice(adj), ' ',random.choice(noun)
+        synth = random.choice(adj) + ' ' + random.choice(noun)
         prod_names.append(synth)
         c = c+1
 
@@ -51,8 +51,8 @@ def inventory_report(products):
     print('Average Weight: ', sum(weights) / len(weights))
     print('Average Flammability', sum(flames) / len(flames))
 
-        # print('Number of Unique Products:', len(products))
-        # print('Average Price: ', mean(products[]))
+    # print('Number of Unique Products:', len(products))
+    # print('Average Price: ', mean(products[]))
 
 
 if __name__ == '__main__':
