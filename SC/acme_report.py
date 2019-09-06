@@ -36,9 +36,23 @@ def generate_products(n=30):
 
 # NOT DONE... PICK UP HERE...
 def inventory_report(products):
-    for product in products:
-        print('Number of Unique Products:', len(products))
-        print('Average Price: ', mean(products[]))
+    names = []
+    prices = []
+    weights = []
+    flames = []
+    gs = generate_products()
+    for g in gs:
+        names.append(g.name)
+        prices.append(g.price)
+        weights.append(g.weight)
+        flames.append(g.flammability)
+    print('Number of Unique Products', len(names))
+    print('Average Price: ', mean(prices))
+    print('Average Weight: ', mean(weights))
+    print('Average Flammability', mean(flames))
+
+        # print('Number of Unique Products:', len(products))
+        # print('Average Price: ', mean(products[]))
 
 
 if __name__ == '__main__':
