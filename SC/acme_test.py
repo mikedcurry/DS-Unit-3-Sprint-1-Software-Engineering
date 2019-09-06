@@ -34,22 +34,26 @@ class AcmeReportTests(unittest.TestCase):
 
 # I created my orignial list diferently than the instructions presuposes...
     def test_legal_names(self):
+        """Tests to make sure product names are possible."""
         # prod_names = []
         # c = 0
         # while c < 30:     # Because it is default I can assume it's 30 here...
         #     synth = random.choice(adj) + ' ' + random.choice(noun)
         #     prod_names.append(synth)
         #     c = c+1
-        all_words = adj, noun
+        # all_words = adj, noun
         # names = []
-        split_names = []
+        # split_names = []
         gs = generate_products()
         for g in gs:
-            text = g.name
-            split_text = text.split()
-            split_names.append(split_text)
-        for split_name in split_names:
-            assertIn(split_name, all_words)
+            string = g.name[0]
+            split_name = string.split(sep=' ')
+        #     text = g.name
+        #     split_text = text.split()
+        #     split_names.append(split_text)
+        # for split_name in split_names:
+            self.assertIn(split_name[0], adj)
+            self.assertIn(split_name[1], noun)
 
 if __name__ == '__main__':
     unittest.main()
