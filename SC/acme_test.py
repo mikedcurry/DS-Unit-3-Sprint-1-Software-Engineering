@@ -19,11 +19,11 @@ class AcmeProductTests(unittest.TestCase):
     def test_explode(self):
         """Test if the product will actually explode it ratio is high"""
         prod = Product('Test Product', weight=20, flammability=20)
-        self.assertEqual(prod.explode, '...BABOOOOMMMm!!!!')
+        self.assertEqual(prod.explode(), '...BABOOOOMMMm!!!!')
 
     def test_stealage(self):
         prod = Product('Test Product', price=20, weight=1)
-        self.assertEqual(prod.stealability, 'Very stealable!')
+        self.assertEqual(prod.stealability(), 'Very stealable!')
 
 
 # Need to finish the acme_report first before returning to this...
