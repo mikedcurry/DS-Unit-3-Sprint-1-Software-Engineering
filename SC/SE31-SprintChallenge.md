@@ -264,9 +264,21 @@ career here, you'll have to answer the following:
 - What, in your opinion, is an important part of code reviews? That is, what is
   something you pay attention to when you review code, and that you appreciate
   when others do the same for your code?
+  - The most important reason for code review is to insure sustainability of 
+    of the code. By passing this on to the peer, they also understand it, and 
+    thus increase 'bus factor', but it also helps to make sure the code is 
+    readable by another person. Also, code might run just fine and be doing 
+    something totally wrong. It's good to have someone else look for mistakes
+    that the a machine can't find (for now...).
 - We have an awful lot of computers here, and it gets pretty confusing with
   slightly different things running on all of them. How could containers help us
   improve this situation?
+  - The nice thing about containers is that you can reduce the amount of packages
+    that are built in to just what is needed. Within each container, things can 
+    be made to work and then passed off to a peer so that they can see and use
+    the container in it's entirety without depending on any preqes on their own 
+    machine. In general, it just makes sure that every comonent of the company's 
+    computer programs play nicely on each inividual setup. 
 
 Answer both of these questions (baseline ~5 sentences) here in text.
 
