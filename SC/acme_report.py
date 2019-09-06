@@ -47,9 +47,9 @@ def inventory_report(products):
         weights.append(g.weight)
         flames.append(g.flammability)
     print('Number of Unique Products', len(names))
-    print('Average Price: ', mean(prices))
-    print('Average Weight: ', mean(weights))
-    print('Average Flammability', mean(flames))
+    print('Average Price: ', sum(prices) / len(prices))
+    print('Average Weight: ', sum(weights) / len(weights))
+    print('Average Flammability', sum(flames) / len(flames))
 
         # print('Number of Unique Products:', len(products))
         # print('Average Price: ', mean(products[]))
