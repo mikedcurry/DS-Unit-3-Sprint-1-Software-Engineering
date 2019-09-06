@@ -5,7 +5,7 @@ import random
 adj = ['useful', 'cute', 'decent', 'strong', 'boring', 'federal',
        'pure', 'suitable', 'practical', 'sacred']
 
-noun = ['Anvil', 'Catapult' 'Disguise' 'Mousetrap', 'Bowlingball', 'Elephant',
+noun = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', 'Bowlingball', 'Elephant',
         'Crane', 'Computer', 'Train', 'Blanket']
 
 
