@@ -1,3 +1,4 @@
+import random
 import unittest
 from acme import Product
 from acme_report import generate_products, adj, noun
@@ -11,7 +12,7 @@ class AcmeProductTests(unittest.TestCase):
         self.assertEqual(prod.price, 10)
 
     def test_default_product_weight(self):
-        """Test default product price being 10."""
+        """Test default product weight being 20."""
         prod = Product('Test Product')
         self.assertEqual(prod.weight, 20)
 
@@ -29,10 +30,23 @@ class AcmeProductTests(unittest.TestCase):
 class AcmeReportTests(unittest.TestCase):
     """Tests the Acme Report"""
     def test_default_num_products(self):
-        pass
+        g = generate_products()
+        self.assertEqual(len(g), 30)
 
+# I created my orignial list diferently than the instructions presuposes...
     def test_legal_names(self):
-        pass
+        prod_names = []
+        c = 0
+        while c < 30:     # Because it is default I can assume it's 30 here...
+            synth = random.choice(adj), ' ', random.choice(noun)
+            prod_names.append(synth)
+            c = c+1
+        names = []
+        gs = generate_products()
+        for g in gs:
+            names.append(g.name)
+        for name in names:
+            self.assertIn(names, prod_names)
 
 if __name__ == '__main__':
     unittest.main()

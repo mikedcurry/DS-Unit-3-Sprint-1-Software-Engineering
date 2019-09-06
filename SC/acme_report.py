@@ -20,7 +20,7 @@ def generate_products(n=30):
     c = 0
 
     while c < (n+1):
-        synth = random.choice(adj) + random.choice(noun)
+        synth = random.choice(adj), ' ',random.choice(noun)
         prod_names.append(synth)
         c = c+1
 
