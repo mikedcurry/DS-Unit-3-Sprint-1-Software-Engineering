@@ -1,6 +1,7 @@
 from acme import Product
 import random
 
+
 # Creating two lists to be combined into product names
 adj = ['useful', 'cute', 'decent', 'strong', 'boring', 'federal',
        'pure', 'suitable', 'practical', 'sacred']
@@ -8,8 +9,6 @@ adj = ['useful', 'cute', 'decent', 'strong', 'boring', 'federal',
 noun = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', 'Bowlingball', 'Elephant',
         'Crane', 'Computer', 'Train', 'Blanket']
 
-
-# random.choice(seq)
 
 def generate_products(n=30):
     '''Generate n random pruducts using product_list
@@ -42,7 +41,6 @@ def inventory_report(products):
     prices = []
     weights = []
     flames = []
-    # This is wrong... 
     gs = products
     for g in gs:
         names.append(g.name)
